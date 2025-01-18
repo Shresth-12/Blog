@@ -16,7 +16,7 @@ export function Auth({ type }: { type: "Signup" | "Signin" }) {
   async function SendRequest() {
     try {
       const response = await axios.post(
-        `http://localhost:8787/api/v1/user/${type === "Signup" ? "signup" : "signin"}`,
+        `${BACKEND_URL}/api/v1/user/${type === "Signup" ? "signup" : "signin"}`,
         postInputs // Send the form data
       );
   

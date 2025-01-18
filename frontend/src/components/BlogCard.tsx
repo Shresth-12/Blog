@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 interface BlogCardProps {
@@ -18,7 +18,7 @@ export function BlogCard({
 }: BlogCardProps) {
     return (
         <Link to={`/blog/${id}`}>
-        <div className='border border-slate-200 pb-4 p-4 cursor-pointer'>
+        <div className='border border-slate-200 pb-4 p-4 cursor-pointer mb-8'>
             <div className='flex '>
                 <div className='flex justify-center flex-col'>
                <Avatar name={authorName}/> 
